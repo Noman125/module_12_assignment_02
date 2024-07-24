@@ -1,6 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
-.work-sans-font {
-  font-family: "Work+Sans", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600&display=swap');
+.inter-font {
+  font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -112,10 +112,10 @@
 }
 
 .title-span {
+  font-size: 9rem;
   font-style: italic;
   font-weight: 400;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* here font family is "miama" */
+  font-family: 'Dancing Script', cursive;
 }
 
 .nav-item {
@@ -134,6 +134,7 @@
 .banner {
   justify-content: space-between;
   align-items: center;
+  margin-top: 4rem;
 }
 
 .banner-title {
@@ -669,17 +670,20 @@ select {
 
   /* Banner for Mobile-Responsive */
   .banner {
-    padding-top: 3rem;
     width: 100%;
   }
 
   .section-title {
     font-size: 2rem;
   }
+  .title-span {
+    font-size: 5rem;
+  }
 
   .banner,
   .habits-content,
-  .run-extra-container {
+  .run-extra-container,
+  .chose-items {
     flex-direction: column;
   }
 
@@ -789,6 +793,14 @@ select {
   .team-content {
     grid-template-columns: 1fr;
   }
+
+  /* Why Choose Us related Style */
+
+  .get-discount{
+    display: none;
+  }
+
+  /* Footer related Style */
 
   .footer-content {
     flex-direction: column;
