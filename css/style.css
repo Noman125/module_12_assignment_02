@@ -513,6 +513,7 @@ select {
 
 /* Why Chose Us Related Styles */
 
+
 .why-chose-us {
   padding-bottom: 70px;
 }
@@ -707,6 +708,9 @@ select {
     font-size: 1.1rem;
   }
 
+  .banner-image-container{
+    left: 0;
+  }
   .free-workout {
     top: 25%;
     right: -17%;
@@ -984,7 +988,7 @@ select {
 
 /* For Medium Device Style From Here */
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
 
   .banner-title {
     margin-top: 3rem;
