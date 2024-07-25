@@ -259,16 +259,14 @@
   padding: 35px;
   border-radius: 15px;
 }
-
 .run-extra-image {
-  background-image: url(../images/run.png);
   width: 366px;
   height: 312px;
-  background-position: center;
+  background-image: url(../images/run.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 20px;
+  background-position: center;
 }
+
 
 .run-extra-title,
 .run-extra-description {
@@ -532,10 +530,9 @@ select {
 }
 
 .chose-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
 }
 
 .chose-item {
@@ -737,10 +734,12 @@ select {
     padding: 25px;
   }
 
-  .run-extra-img {
+  .run-extra-image{
+    background-image: url(../images/run_full.png);
     width: 100%;
+    height: 180px;
+    border-radius: 1.125rem;
   }
-
   .run-extra-btn {
     display: flex;
     justify-content: center;
@@ -803,6 +802,11 @@ select {
 
   /* Why Choose Us related Style */
 
+  .chose-items{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
   .get-discount{
     display: none;
   }
@@ -838,11 +842,6 @@ select {
 
   .section-title {
     font-size: 1.5rem;
-  }
-
-  .run-extra-image {
-    width: 290px;
-    height: 275px;
   }
 
   .run-extra-btn>button {
@@ -993,17 +992,21 @@ select {
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
 
+  .navbar{
+    padding-top: 3rem;
+  }
+  .nav-links {
+    gap: 2rem;
+  }
+
   .banner-title {
     margin-top: 3rem;
     font-size: 5rem;
+    line-height: 6rem;
   }
 
   .banner-btn {
     justify-content: space-evenly;
-  }
-
-  .nav-links {
-    gap: 3rem;
   }
 
   .banner {
@@ -1024,14 +1027,21 @@ select {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .habit-title {
+    padding: 20px 0;
+    font-size: 1.5rem;
+  }
   .run-extra-title {
     font-size: 2rem;
   }
-
+  .run-extra-container{
+    grid-template-columns: 1.3fr 1.2fr;
+    gap: 2rem;
+  }
   .run-extra-image {
     width: 100%;
-    height: 270px;
+    height: 350px;
+    border-radius: 1.125rem;
   }
 
   .run-extra-btn>.btn-primary {
@@ -1059,6 +1069,18 @@ select {
 
   input {
     width: 90%;
+  }
+  .chose-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.3rem;
+  }
+  .chose-item{
+    padding: 25px;
+  }
+  .get-discount{
+    right: -7%;
+    top: 1%;
+    rotate: 40deg;
   }
 
 }
