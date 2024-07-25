@@ -63,10 +63,7 @@
   cursor: pointer;
 }
 
-
 .header {
-  /* background-color: #1B1B1B; */
-  /* background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%); */
   background: linear-gradient(to bottom, #070707, #2c2b2b 50%, #080808);
 }
 
@@ -212,7 +209,8 @@
   right: -25%;
 }
 
-/* Main section Related Style */
+/* Main section Related Style Start From Here */
+
 .bg-color {
   background-color: #050607;
 }
@@ -228,6 +226,8 @@
 }
 
 .habits-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 50px;
   gap: 30px;
 }
@@ -245,17 +245,17 @@
   border-radius: 50%;
 }
 
-/* Run Extra Related Style */
+/* Run Extra Mile Related Style */
 
 .run-extra {
   padding-bottom: 40px;
 }
 
 .run-extra-container {
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 5rem;
   background-color: #222122;
-  gap: 2rem;
   padding: 35px;
   border-radius: 15px;
 }
@@ -464,6 +464,7 @@ select {
 
 
 /* Meet Our Team Related Style */
+
 .meet-our-team {
   padding-bottom: 50px;
 }
@@ -586,8 +587,8 @@ select {
   gap: 5px;
   border-radius: 15px;
   font-size: 1.3rem;
-  right: 1%;
-  top: 1%;
+  right: 7%;
+  top: -2%;
   rotate: 30deg;
 }
 
@@ -648,7 +649,6 @@ select {
 
 /* For Mobile Device */
 
-
 @media screen and (max-width: 576px) {
 
   /* navbar for mobile-responsive */
@@ -682,8 +682,6 @@ select {
   }
 
   .banner,
-  .habits-content,
-  .run-extra-container,
   .chose-items {
     flex-direction: column;
   }
@@ -727,9 +725,14 @@ select {
     font-size: 1.5rem;
   }
 
+  .habits-content{
+    grid-template-columns: 1fr;
+  }
+
   /* Run and Extra Mile Easily mobile-responsive */
 
   .run-extra-container {
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 25px;
   }
@@ -1020,12 +1023,6 @@ select {
   .habits-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .run-extra-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
   }
 
   .run-extra-title {
