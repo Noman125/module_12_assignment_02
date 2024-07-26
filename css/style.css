@@ -686,6 +686,7 @@ select {
 
   .banner-title {
     font-size: 3rem;
+    line-height: 3rem;
   }
 
   .banner-description {
@@ -827,6 +828,9 @@ select {
 
 @media screen and (max-width: 476px) {
 
+  .banner{
+    margin-top: 2rem;
+  }
   .btn-primary,
   .btn-secondary {
     padding: 1rem 1.5rem;
@@ -834,9 +838,11 @@ select {
   }
 
   .banner-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-
+  .title-span {
+    font-size: 4rem;
+  }
   .banner-description {
     font-size: 1rem;
   }
@@ -889,6 +895,9 @@ select {
   .all-right-reserve {
     font-size: 1.2rem;
   }
+  .footer-section-heading{
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -897,13 +906,14 @@ select {
   }
 
   .banner {
-    padding-top: 1.5rem;
+    margin-top: 1rem;
   }
-
   .banner-title {
     font-size: 2rem;
   }
-
+  .title-span {
+    font-size: 3rem;
+  }
   .btn-primary,
   .btn-secondary {
     padding: 0.7rem 1.2rem;
