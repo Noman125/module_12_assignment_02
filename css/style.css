@@ -109,10 +109,10 @@
 }
 
 .title-span {
-  font-size: 9rem;
+  font-size: 5rem;
   font-style: italic;
   font-weight: 400;
-  font-family: 'Dancing Script', cursive;
+  font-family: Miama, sans-serif;
 }
 
 .nav-item {
@@ -841,7 +841,7 @@ select {
     font-size: 2.5rem;
   }
   .title-span {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   .banner-description {
     font-size: 1rem;
@@ -912,7 +912,7 @@ select {
     font-size: 2rem;
   }
   .title-span {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .btn-primary,
   .btn-secondary {
